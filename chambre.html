@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- cdnj font awesome -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" href="../../HTML-CSS/12-Hotel-le-Bois-Dormant/css/style-chambre.css">
+    <title>HTML-CSS / 12 - Hôtel le bois dormant / Chambre</title>   
+</head>
+
+
+<body>
+
+    <header class="header">
+        <nav class="header__nav">
+        <a href="index.html" class="link__logo">
+            <img src="/HTML-CSS/12-Hotel-le-Bois-Dormant/assets/logo/logo-hotel-le-bois-dormant-horizontal.svg" alt="Logo hôtel le bois dormant" class="header__logo">
+        </a>
+            <ul class="nav__list">
+
+                <li class="nav__list__item">
+                    <a href="" class="nav__link">L'Hôtel</a>
+                </li>
+                <li class="nav__list__item">
+                    <a href="chambre.html" class="nav__link">Nos chambres</a>
+                </li>
+                <li class="nav__list__item">
+                    <a href="" class="nav__link">Le restaurant</a>
+                </li>
+                <li class="nav__list__item">
+                    <a href="se-balader.html" class="nav__link">Se balader</a>
+                </li>
+                <li class="nav__list__item">
+                    <a href="" class="nav__link">Réserver</a>
+                </li>
+            </ul>
+        </nav>
+        <!-- <div class="header__block__title">
+            <h1 class="header__title">Le calme en pleine nature</h1>
+            <a href="" class="header__link__decouvrir">Découvrir notre hôtel&nbsp;&nbsp;<i class="fa-solid fa-chevron-right"></i></a>
+        </div> -->
+    </header>
+
+
+
+    <main class="main">
+        <section class="chambre">
+            <div class="chambre__block__pictures picture__caracteristiques">
+                <img src="assets/images/chambres/annie-spratt-hqGcLzakDT4-unsplash.jpg" alt="photo de chambre du bois dormant" class="chambre__picture__item">
+            </div>
+            <div class="chambre__content">
+                <h2 class="chambre__title">La suite junior</h2>
+                <p class="chambre__price">Dès 130€</p>
+                <p class="chambre__content__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda quaerat provident minima, molestias dolor consequatur ipsa libero numquam delectus. Quod inventore perferendis necessitatibus assumenda sapiente accusantium, temporibus provident qui velit, nobis magni soluta natus ad eligendi facilis optio est tenetur cumque fuga modi nesciunt ut sunt? Sapiente blanditiis quisquam alias?</p>
+                <a href="" class="btn">Réserver</a>
+            </div>
+        </section>
+        <section class="chambre">
+            <div class="chambre__content__caracteristique">
+                <h2 class="chambre__title">Caractéristiques</h2>
+                <div class="chambre__caracteristiques">
+                    <p class="caracteristique__item">Taille : 45m²</p>
+                    <p class="caracteristique__item">Occupants : 2 personnes</p>
+                    <p class="caracteristique__item">Wifi : OUI</p>
+                    <p class="caracteristique__item">TV : OUI</p>
+                </div>
+            </div>
+            <div class="chambre__block__pictures">
+                <img src="assets/images/chambres/christopher-jolly-GqbU78bdJFM-unsplash.jpg" alt="photo de chambre du bois dormant" class="chambre__picture__item">
+            </div>
+        </section>
+        <section class="chambre">
+            <div class="chambre__block__pictures">
+                <img src="assets/images/chambres/yasmine-boheas-i_q8BWT80TE-unsplash.jpg" alt="photo 3 de chambre du bois dormant" class="chambre__picture__item">
+            </div>
+            <div class="chambre__content">
+                <p class="chambre__content__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis corrupti laboriosam assumenda dolore, est commodi. Voluptatum cum ipsam suscipit aspernatur laboriosam quia sed, delectus laudantium nemo atque, amet commodi harum maiores modi libero illo totam quaerat. Expedita dolore excepturi illo totam molestias iusto. Dolore repudiandae ipsa odit placeat excepturi optio.</p>
+            </div>  
+        </section>
+
+        <!-- carousel -->
+         <div class="carousel">
+                <div id="carouselExampleCaptions" class="carousel slide">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                    <img src="assets/images/chambres/carousel/chambre caroussel1.webp" class="d-block w-100 picture__slider" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>...</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas fugit dolorum exercitationem enim commodi accusantium hic nobis reiciendis magnam. Dignissimos.</p>
+                    </div>
+                    </div>
+                    <div class="carousel-item">
+                    <img src="assets/images/chambres/carousel/chambre caroussel2.webp" class="d-block w-100picture__slider" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>...</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis molestiae molestias alias ut, cumque laudantium! Magnam cupiditate, eaque quo dolores ducimus velit quos eos expedita, tempore, reiciendis eligendi sit. Dolore, eos? Soluta nesciunt quibusdam accusamus cupiditate temporibus dignissimos fugit tenetur.</p>
+                    </div>
+                    </div>
+                    <div class="carousel-item">
+                    <img src="assets/images/chambres/carousel/chambre caroussel3.webp" class="d-block w-100 picture__slider" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>...</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, distinctio sint possimus blanditiis, asperiores omnis suscipit aliquid eaque explicabo repellat, laborum optio. Quod eveniet sapiente autem nisi eligendi corrupti nulla?</p>
+                    </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+                </div>
+        </div>
+
+        <section class="chambres"></section>
+            <h2 class="chambre__title">Les chambres</h2>
+            <div class="chambres__content">
+
+                <article class="chambre__card">
+                    <a href="" class="chambre__card__link">
+                        <img src="assets/images/chambres/annie-spratt-hqGcLzakDT4-unsplash.jpg" class="chambre__picture" alt="Photo d'une chambre de l'hôtel du bois dormant">
+                        <div class="chambre__card__content">
+                            <h3 class="chambre__card__title">La suite junior</h3>
+                            <a href="" class="btn">Découvrir</a>
+                        </div>
+                    </a>
+                </article>
+                <article class="chambre__card">
+                    <a href="" class="chambre__card__link">
+                        <img src="assets/images/chambres/christopher-jolly-GqbU78bdJFM-unsplash.jpg" class="chambre__picture" alt="Photo d'une chambre de l'hôtel du bois dormant">
+                        <div class="chambre__card__content">
+                            <h3 class="chambre__card__title">La suite familiale</h3>
+                            <a href="" class="btn">Découvrir</a>
+                        </div>
+                    </a>
+                </article>
+                <article class="chambre__card">
+                    <a href="" class="chambre__card__link">
+                        <img src="assets/images/chambres/yasmine-boheas-i_q8BWT80TE-unsplash.jpg" class="chambre__picture" alt="Photo d'une chambre de l'hôtel du bois dormant">
+                        <div class="chambre__card__content">
+                            <h3 class="chambre__card__title">La chambre double</h3>
+                            <a href="" class="btn">Découvrir</a>
+                        </div>
+                    </a>
+                </article>
+            </div>
+        </section>
+
+    </main>
+
+
+
+    <footer class="footer">
+        <div class="footer__informations footer__content">
+            <a href="index.html" class="link__logo__footer">
+                <img src="assets/logo/logo-hotel-le-bois-dormant-horizontal-white.svg" alt="Logo hôtel le bois dormant" class="header__logo">
+            </a>
+            <div class="footer__adress">
+                <p class="footer__phone">
+                    <i class="fa-solid fa-phone"></i>
+                    &nbsp;&nbsp;
+                    02 36 45 78 45</p>
+                <p class="footer__mail">
+                    <i class="fa-solid fa-envelope"></i>
+                    &nbsp;&nbsp;
+                    hotelleboisdormant@gmail.com</p>
+            </div>
+        </div>
+        <div class="footer__reseaux footer__content">
+            <a href="https://x.com/i/flow/login?redirect_after_login=%2Fboishotel" class="reseaux__link" target="_blank">
+                <i class="fa-brands fa-x-twitter"></i>
+            </a>
+            <a href="https://www.instagram.com/hotelboisdormant/" class="reseaux__link" target="_blank">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://www.facebook.com/hotel.leboisdormant/?locale=fr_FR" class="reseaux__link" target="_blank">
+                <i class="fa-brands fa-facebook"></i>
+            </a>
+        </div>
+        <div class="footer__nav footer__content">
+            <nav class="footer__nav">
+                <a href="https://www.economie.gouv.fr/entreprises/site-internet-mentions-obligatoires" class="footer__nav__link" target="_blank">Mentions</a>  
+                <a href="contact.html" class="footer__nav__link">Contact</a>
+                <a href="https://www.o-bois-dormant.voyage/fr/conditions-generales-de-vente" class="footer__nav__link" target="_blank">CGV</a>
+                <a href="https://maps.app.goo.gl/4hFWAuoc6j7So7Vc8" class="footer__nav__link" target="_blank">Plan du site</a>
+                <a href="a-propos.html" class="footer__nav__link">À propros</a>
+            </nav>
+        </div>
+    </footer>
+
+    <!-- bootstrap CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+
+
+
+</body>
+</html>
+

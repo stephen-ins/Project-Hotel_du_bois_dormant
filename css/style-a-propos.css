@@ -1,0 +1,83 @@
+@import url(reset.css);
+@import url(variable.css);
+@import url(nav.css);
+@import url(footer.css);
+
+@font-face {
+  font-family: "space_grotesklight";
+  src: url("../assets/fonts/spacegrotesk-variablefont_wght-webfont.woff2")
+      format("woff2"),
+    url("../assets/fonts/spacegrotesk-variablefont_wght-webfont.woff")
+      format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+html,
+body {
+  font-size: 16px;
+  font-family: var(--font-family);
+}
+
+.main {
+  margin: 160px auto;
+}
+
+.title__a-propos {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 140px auto 50px;
+  letter-spacing: 25px;
+  text-shadow: rgb(255, 123, 0) 1px 0 10px;
+}
+
+.photo__equipe {
+  border-radius: 10rem;
+  width: 80%;
+  height: 80%;
+  cursor: pointer;
+  filter: drop-shadow(-11px -23px 22px #b1a9a9);
+  position: relative;
+  transition: all 0.5s;
+  /* align-items: center; */
+  display: block;
+  margin: 0 auto;
+}
+
+.photo__equipe:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.text_content {
+  font-size: 1.5rem;
+  text-align: justify;
+  column-count: 2;
+  column-gap: 100px;
+  column-rule: 3px solid rgb(95, 95, 95);
+  margin: 64px 80px;
+}
+
+.align__signature {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+}
+
+.le__directeur {
+  margin-top: 30px;
+  word-spacing: 0.5rem;
+  line-height: 2rem;
+  margin-right: 110px;
+  font-size: var(--font-size-xl);
+}
+
+.signature {
+  width: 280x;
+  height: 240px;
+}
+
+.footer {
+  height: 300px;
+}

@@ -1,0 +1,43 @@
+
+/* ******************* CSS Header *********************** */
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header__logo{
+    width: var(--max-width-logo);
+}
+
+.header__nav{
+    width: 100%;
+    position: fixed;
+    top:0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 0 64px; */
+    min-height: var(--min-height-nav);
+    background: rgba(207, 194, 194, 0.8);
+    z-index: 1000;
+}
+
+.link__logo{
+    margin-left: 64px;
+}
+
+
+.nav__list{
+    display: flex;
+    margin-right: 64px;
+}
+
+.nav__link{
+    text-decoration: none;
+    color: var(--text-color-primary-dark);
+    font-weight: var(--font-weight-xl);
+    margin-left: var(--spacing-xl);  
+}

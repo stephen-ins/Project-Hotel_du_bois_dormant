@@ -1,0 +1,298 @@
+@import url(reset.css);
+@import url(variable.css);
+@import url(nav.css);
+@import url(footer.css);
+
+@font-face {
+  font-family: "space_grotesklight";
+  src: url("../assets/fonts/spacegrotesk-variablefont_wght-webfont.woff2")
+      format("woff2"),
+    url("../assets/fonts/spacegrotesk-variablefont_wght-webfont.woff")
+      format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*******************CSS General****************************/
+
+html,
+body {
+  font-size: 16px;
+  font-family: var(--font-family);
+}
+
+/******************** CSS Main ***************************/
+
+.main {
+  padding: 64px;
+}
+
+.chambre {
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 64px;
+  column-gap: 64px;
+}
+
+.chambre__content,
+.chambre__content2,
+.chambre__content3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  row-gap: var(--spacing-md);
+}
+
+.chambre__content__caracteristique {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: var(--spacing-md);
+}
+
+.chambre__picture__item {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  border-radius: var(--spacing-md);
+}
+
+.chambre__title {
+  font-size: var(--font-size-subtitle);
+  font-weight: var(--font-weight-xl);
+  margin-bottom: var(--spacing-xl);
+}
+
+.btn {
+  background: var(--bg-btn);
+  color: var(--text-color-primary-white);
+  text-decoration: none;
+  padding: var(--spacing-xs);
+  width: 100px;
+  text-align: center;
+  border-radius: var(--radius-md);
+  font-weight: var(--font-weight-xl);
+}
+
+.chambre__price {
+  font-size: var(--font-size-lg);
+  color: rgb(126, 107, 107);
+  font-weight: var(--font-weight-xl);
+}
+
+.picture__slider {
+  border-radius: var(--radius-md);
+}
+
+.chambres {
+  margin-bottom: 64px;
+}
+
+.chambre__title {
+  font-size: var(--font-size-subtitle);
+  font-weight: var(--font-weight-xl);
+  margin-bottom: var(--spacing-xl);
+}
+
+.chambres__content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: var(--spacing-xl);
+}
+
+.chambre__picture {
+  width: 100%;
+  height: 100%;
+  border-radius: var(--radius-md);
+}
+
+.chambre__card__link {
+  text-decoration: none;
+  color: var(--text-color-primary-white);
+}
+
+.chambre__card {
+  position: relative;
+}
+
+.chambre__card__title {
+  color: var(--text-color-primary-dark);
+  font-size: var(--font-size-subtitle);
+  font-weight: var(--font-weight-xl);
+  margin-bottom: var(--spacing-md);
+}
+
+.chambre__card__content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: var(--spacing-md) 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(165, 153, 153, 0.4);
+  width: 100%;
+}
+
+.carousel {
+  margin-top: 64px;
+  margin-bottom: 64px;
+}
+
+.footer {
+  height: 300px;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 1024px) {
+  .chambre {
+    display: flex;
+    flex-direction: column;
+  }
+  .chambre__content {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto 300px;
+    row-gap: 2rem;
+  }
+
+  .chambre__card:last-child {
+    grid-column: 1 / 3;
+  }
+
+  .chambre__picture {
+    object-fit: cover;
+  }
+
+  /* FOOTER */
+
+  .footer {
+    display: flex;
+    padding: 20px;
+  }
+
+  .footer__reseaux,
+  .footer__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+
+  .footer__reseaux,
+  .footer__content,
+  .footer__informations,
+  .footer__content {
+    display: grid;
+    flex-direction: row;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    height: 250px;
+  }
+  .header__nav {
+    flex-direction: column;
+    padding: 1rem 0;
+
+    display: flex;
+    padding: 25px;
+  }
+  .link__logo {
+    margin-bottom: 1rem;
+    margin: 1rem 0;
+  }
+  .nav__list {
+    flex-direction: column;
+    row-gap: 0.5rem;
+    text-align: center;
+    margin-right: 0;
+  }
+  .nav__link {
+    margin-left: 0;
+  }
+
+  /* on positionne le logo et la nav en colonne, le logo se trouve au dessus de la nav
+  .header__nav {
+    padding: 1rem;
+    flex-direction: column;
+  }
+  .link__logo {
+    margin-bottom: 1rem;
+  }
+
+  on positionne en colonnne tout les liens de la nav et on aligne au centre horizontalement
+  .nav__list {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 0.5rem;
+  }
+
+  .nav__link {
+    margin-left: 0;
+  } */
+
+  /* On positionne en colonnes les sections chambre */
+  .chambre {
+    grid-template-columns: 1fr;
+  }
+
+  .main {
+    padding: 32px 1rem;
+  }
+
+  .chambre__picture__item {
+    height: 300px;
+    margin-bottom: 1rem;
+  }
+
+  .picture__caracteristiques {
+    order: 1;
+  }
+
+  .chambre__content__caracteristique {
+    order: 2;
+  }
+
+  /* FOOTER */
+  .footer {
+    flex-direction: column;
+    height: 100%;
+    padding: 32px 0;
+  }
+
+  .footer__content {
+    width: 100%;
+    align-items: center;
+    margin-bottom: 1.5rem;
+  }
+
+  .footer__content:last-child {
+    margin-bottom: 0;
+  }
+
+  .footer__nav {
+    align-items: center;
+    padding: 6px;
+  }
+
+  .footer__phone,
+  .footer__email {
+    text-align: center;
+  }
+
+  .link__logo__footer {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+  }
+
+  .footer__reseaux,
+  .footer__content {
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+  }
+}

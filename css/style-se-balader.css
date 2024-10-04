@@ -1,0 +1,140 @@
+@import url(reset.css);
+@import url(variable.css);
+@import url(nav.css);
+@import url(footer.css);
+
+@font-face {
+  font-family: "space_grotesklight";
+  src: url("../assets/fonts/spacegrotesk-variablefont_wght-webfont.woff2")
+      format("woff2"),
+    url("../assets/fonts/spacegrotesk-variablefont_wght-webfont.woff")
+      format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+html,
+body {
+  font-size: 16px;
+  font-family: var(--font-family);
+}
+
+.container {
+  margin-top: 200px;
+  margin-bottom: 200px;
+}
+.title {
+  margin-bottom: 110px;
+  text-align: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.icone__jura__tourisme {
+  width: 100px;
+  height: 100px;
+  margin-right: 200px;
+}
+
+.content {
+  width: 100%;
+  display: grid;
+  column-gap: 60px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.card__balade__1,
+.card__balade__2,
+.card__balade__3 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  /* justify-content: space-between; */
+}
+
+.title__balade {
+  margin-left: 120px;
+  font-size: var(--font-size-subtitle);
+  font-weight: var(--font-weight-xl);
+  margin-bottom: var(--spacing-xl);
+  letter-spacing: var(--spacing-lg);
+}
+
+.title__balade__1,
+.title__balade__2,
+.title__balade__3 {
+  /* display: none; */
+  /* align-items: none; */
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-lg);
+  /* text-align: start; */
+  border-bottom: 1px solid rgb(82, 79, 79);
+  letter-spacing: var(--spacing-xxs);
+}
+
+.text__balade__1,
+.text__balade__2,
+.text__balade__3 {
+  font-size: var(--font-size-md);
+  text-justify: auto;
+  margin: 40px 20px;
+  text-align: justify;
+  height: 380px;
+}
+
+.icone__jura__tourisme {
+  height: 100px;
+  width: 100px;
+}
+
+.image__balade {
+  display: flex;
+  justify-content: center;
+  border-radius: 50px;
+  object-fit: cover;
+  width: 300px;
+  height: 250px;
+}
+
+.button__style {
+  margin: 20px auto;
+  text-decoration: none;
+  border: 0;
+  line-height: 2;
+  padding: 10px 20px;
+  font-size: 1rem;
+  text-align: center;
+  color: #000000;
+  text-shadow: 1px 1px 1px #000;
+  border-radius: 10px;
+  background-color: rgb(207, 207, 202);
+  background-image: linear-gradient(
+    to top left,
+    rgba(0, 0, 0, 0.2),
+    rgba(0, 0, 0, 0.2) 30%,
+    rgba(0, 0, 0, 0)
+  );
+  box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6),
+    inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+}
+
+.styled:hover {
+  background-color: rgba(255, 0, 0, 1);
+}
+
+.styled:active {
+  box-shadow: inset -2px -2px 3px rgba(255, 255, 255, 0.6),
+    inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+}
+
+
+
+
+
+.footer {
+  height: 300px;
+}

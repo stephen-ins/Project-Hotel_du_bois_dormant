@@ -1,0 +1,48 @@
+/* ******************* CSS Footer *********************** */
+
+.footer {
+  color: var(--text-color-primary-white);
+  height: var(--max-height-footer);
+  background-color: var(--bg-footer);
+  padding: 64px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__content {
+  width: calc(100% / 3);
+}
+
+.footer__informations {
+  justify-content: space-around;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__phone {
+  margin-bottom: var(--spacing-xs);
+}
+
+.footer__reseaux {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.reseaux__link {
+  font-size: 32px;
+  color: var(--text-color-primary-white);
+}
+
+.footer__nav {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 100%;
+}
+
+.footer__nav__link {
+  text-decoration: none;
+  color: var(--text-color-primary-white);
+}
