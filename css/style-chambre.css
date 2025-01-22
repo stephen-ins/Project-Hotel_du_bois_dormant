@@ -152,7 +152,9 @@ body {
     flex-direction: column;
   }
   .chambre__content {
-    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    height: auto;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: auto 300px;
     row-gap: 2rem;
   }
@@ -193,6 +195,20 @@ body {
   .header {
     height: 250px;
   }
+  .title__balade{
+    font-size: 0.5rem;
+  }
+  .icone__jura__tourisme{
+    width: 30px;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+  }
   .header__nav {
     flex-direction: column;
     padding: 1rem 0;
@@ -203,6 +219,12 @@ body {
   .link__logo {
     margin-bottom: 1rem;
     margin: 1rem 0;
+  }
+  .chambre__card__title {
+    font-size: 1rem;
+  }
+  .btn {
+    font-size: 0.75rem;
   }
   .nav__list {
     flex-direction: column;

@@ -21,12 +21,42 @@ body {
   font-family: var(--font-family);
 }
 
+/* .header{
+  height: var(--max-height-header);
+  background: #000000 url(../Assets/banners/banner-home.jpg);
+  background-size: cover;
+}
+
+.header__title{
+  font-size: var(--font-size-h1);
+  text-transform: uppercase;
+  font-weight: var(--font-weight-xl);
+  color: var(--text-color-primary-white);
+  letter-spacing: var(--spacing-xs);
+  text-align: center;
+}
+
+.header__link__decouvrir{
+  font-size: 1.5rem;
+  text-decoration: none;
+  font-weight: var(--font-weight-xl);
+  color: var(--text-color-primary-white);
+}
+
+.header__block__title{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 48px;
+  margin-top: calc(var(--max-height-header) / 2);
+} */
+
 /* ******************* CSS Header *********************** */
 
 .header {
   height: var(--max-height-header);
-  background: black
-    url(/HTML-CSS/12-Hotel-le-Bois-Dormant/assets/banners/banner-home.jpg);
+  background: black url(../assets/banners/banner-home.jpg);
   background-size: cover;
 }
 
